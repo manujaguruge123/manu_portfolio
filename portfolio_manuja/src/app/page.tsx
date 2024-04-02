@@ -16,6 +16,8 @@ import project5 from "../../public/web5.png";
 
 import { useState } from "react";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
@@ -60,18 +62,19 @@ export default function Home() {
 
           {/* Profile */}
 
-          <div className="m-auto relative bg-gradient-to-b from-yellow-100 w-80 h-80 p-5 mt-20 rounded-full">
-            <Image
-              src={profileImage}
-              alt="Manuja Guruge"
-              // layout="responsive"
-              // objectFit="cover"
-              className="rounded-full"
-              width={300}
-              height={300}
-            />
-          </div>
-
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+            <div className="m-auto relative bg-gradient-to-b from-yellow-100 w-80 h-80 p-5 mt-20 rounded-full">
+              <Image
+                src={profileImage}
+                alt="Manuja Guruge"
+                // layout="responsive"
+                // objectFit="cover"
+                className="rounded-full"
+                width={300}
+                height={300}
+              />
+            </div>
+          </motion.div>
         </section>
 
         {/* Services */}
@@ -87,47 +90,49 @@ export default function Home() {
           <div className="md:flex lg:flex gap-10 mx-auto">
             {/* Card 1 */}
 
-            <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
-              <Image
-                src={graphisDesign}
-                alt="Grapic Design"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Graphic Designing</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
-            </div>
-
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+              <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
+                <Image
+                  src={graphisDesign}
+                  alt="Grapic Design"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Graphic Designing</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+              </div>
+            </motion.div>
 
             {/* Card 2 */}
-
-            <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
-              <Image
-                src={codeImage}
-                alt="Grapic Design"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Application Development</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
-            </div>
-
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+              <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
+                <Image
+                  src={codeImage}
+                  alt="Grapic Design"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Application Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+              </div>
+            </motion.div>
 
             {/* Card 3 */}
-
-            <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
-              <Image
-                src={graphisDesign}
-                alt="Grapic Design"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Web Development</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+              <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
+                <Image
+                  src={graphisDesign}
+                  alt="Grapic Design"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Web Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+              </div>
+            </motion.div>
 
 
           </div>
@@ -143,70 +148,70 @@ export default function Home() {
           </div>
           {/* Images of projects */}
           <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-
-              <Image
-                src={project1}
-                alt="Project 1"
-                //layout="responsive"
-                className="rounded-lg obejct-cover"
-              />
-
+          <div className="basis-1/3 flex-1">
+              <motion.div whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.9, rotate: -3, borderRadius: "100%" }} >
+                <Image
+                  src={project1}
+                  alt="Project 1"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              </motion.div>
             </div>
 
             <div className="basis-1/3 flex-1">
-
-              <Image
-                src={project2}
-                alt="Project 2"
-                //layout="responsive"
-                className="rounded-lg obejct-cover"
-              />
-
+              <motion.div whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.9, rotate: -3, borderRadius: "100%" }} >
+                <Image
+                  src={project2}
+                  alt="Project 2"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              </motion.div>
             </div>
 
             <div className="basis-1/3 flex-1">
-
-              <Image
-                src={project3}
-                alt="Project 3"
-                // layout="responsive"
-                className="rounded-lg obejct-cover"
-              />
-
+              <motion.div whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.9, rotate: -3, borderRadius: "100%" }} >
+                <Image
+                  src={project3}
+                  alt="Project 3"
+                  // layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              </motion.div>
             </div>
 
             <div className="basis-1/3 flex-1">
-
-              <Image
-                src={project4}
-                alt="Project 4"
-                //layout="responsive"
-                className="rounded-lg obejct-cover"
-              />
-
+              <motion.div whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.9, rotate: -3, borderRadius: "100%" }} >
+                <Image
+                  src={project4}
+                  alt="Project 4"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              </motion.div>
             </div>
 
             <div className="basis-1/3 flex-1">
-
-              <Image
-                src={project5}
-                alt="Project 5"
-                //layout="responsive"
-                className="rounded-lg obejct-cover"
-              />
-
+              <motion.div whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.9, rotate: -3, borderRadius: "100%" }} >
+                <Image
+                  src={project5}
+                  alt="Project 5"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              </motion.div>
             </div>
 
             <div className="basis-1/3 flex-1">
-
-              <Image
-                src={project1}
-                alt="Project 6"
-                //layout="responsive"
-                className="rounded-lg obejct-cover"
-              />
-
+              <motion.div whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.9, rotate: -3, borderRadius: "100%" }} >
+                <Image
+                  src={project1}
+                  alt="Project 6"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              </motion.div>
             </div>
           </div>
         </section>
