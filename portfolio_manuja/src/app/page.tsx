@@ -6,6 +6,12 @@ import profileImage from "../../public/manuja.jpg";
 import graphisDesign from "../../public/design.png";
 import codeImage from "../../public/code.png";
 
+import project1 from "../../public/web1.png";
+import project2 from "../../public/web2.png";
+import project3 from "../../public/web3.png";
+import project4 from "../../public/web4.png";
+import project5 from "../../public/web5.png";
+
 export default function Home() {
   return (
     <main className="font-poppins bg-yellow-50 min-h-screen px-10">
@@ -117,6 +123,84 @@ export default function Home() {
               </div>
             
 
+          </div>
+        </section>
+
+        {/* My Work */}
+        <section>
+          <div>
+            <h2 className="text-5xl py-10 font-bold opacity-60 dark:text-white">Portfolio</h2>
+            <p className="text-sm py-2 text-gray-400 leading-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi rerum quibusdam aspernatur eveniet voluptatum minima, sequi porro excepturi? Ad reprehenderit repellat distinctio cupiditate eius voluptate!
+            </p>
+          </div>
+          {/* Images of projects */}
+          <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              
+                <Image
+                  src={project1}
+                  alt="Project 1"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+             
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              
+                <Image
+                  src={project2}
+                  alt="Project 2"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+             
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              
+                <Image
+                  src={project3}
+                  alt="Project 3"
+                  // layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              
+                <Image
+                  src={project4}
+                  alt="Project 4"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              
+                <Image
+                  src={project5}
+                  alt="Project 5"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              
+            </div>
+
+            <div className="basis-1/3 flex-1">
+               
+                <Image
+                  src={project1}
+                  alt="Project 6"
+                  //layout="responsive"
+                  className="rounded-lg obejct-cover"
+                />
+              
+            </div>
           </div>
         </section>
     </main>
