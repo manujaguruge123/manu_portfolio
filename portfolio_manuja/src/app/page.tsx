@@ -60,6 +60,65 @@ export default function Home() {
           </div>
         
       </section>
+
+      {/* Services */}
+      <section>
+          <div>
+            <h2 className="text-5xl py-10 font-bold opacity-60">Services I Offer</h2>
+            <p className="text-sm py-2 text-gray-400 leading-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi rerum quibusdam aspernatur eveniet voluptatum minima, sequi porro excepturi? Ad reprehenderit repellat distinctio cupiditate eius voluptate!
+            </p>
+          </div>
+
+          {/* Services Cards */}
+          <div className="md:flex lg:flex gap-10 mx-auto">
+            {/* Card 1 */}
+            
+              <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
+                <Image
+                  src={graphisDesign}
+                  alt="Grapic Design"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Graphic Designing</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+              </div>
+            
+
+            {/* Card 2 */}
+            
+              <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
+                <Image
+                  src={codeImage}
+                  alt="Grapic Design"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Application Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+              </div>
+            
+
+            {/* Card 3 */}
+            
+              <div className="bg-yellow-300 p-5 text-center shadow-sm my-10 rounded-xl">
+                <Image
+                  src={graphisDesign}
+                  alt="Grapic Design"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Web Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+              </div>
+            
+
+          </div>
+        </section>
     </main>
   );
 }
