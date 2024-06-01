@@ -193,7 +193,7 @@ export default function Home() {
                   src={project5}
                   alt="Project 5"
                   //layout="responsive"
-                  className="rounded-lg obejct-cover"
+                  className="rounded-lg obejct-cover" 
                 />
               </motion.div>
             </div>
