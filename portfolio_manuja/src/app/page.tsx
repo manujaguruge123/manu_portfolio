@@ -34,7 +34,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-xl mx-5 dark:text-white" />
               </li>
               <li>
-                <a href="https://drive.google.com/file/d/1efEGh1TBDf1CEwesxEskZm6RlwlJthm1/view?usp=sharing" download={"CV"} className="bg-yellow-400 text-black px-4 py-2 border-none rounded-md">Resume</a>
+                <a href="https://drive.google.com/drive/folders/14oYbRHUmHu4OyjUJAjHiv-7q-cHvUmuS?usp=sharing" download={"CV"} className="bg-yellow-400 text-black px-4 py-2 border-none rounded-md">Resume</a>
               </li>
             </ul>
           </nav>
@@ -79,8 +79,7 @@ export default function Home() {
           <div>
             <h2 className="text-5xl py-10 font-bold opacity-60 dark:text-white">Services I Offer</h2>
             <p className="text-sm py-2 text-gray-400 leading-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi rerum quibusdam aspernatur eveniet voluptatum minima, sequi porro excepturi? Ad reprehenderit repellat distinctio cupiditate eius voluptate!
-            </p>
+            I provide specialized services in UI/UX Development, Web Development, and Mobile Development. Each service is designed to create user-centric solutions that are visually appealing, functional, and high-performing.            </p>
           </div>
 
           {/* Services Cards */}
@@ -95,8 +94,8 @@ export default function Home() {
                   height={100}
                   className="inline"
                 />
-                <h2 className="text-2xl font-bold">Graphic Designing</h2>
-                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+                <h2 className="text-2xl font-bold">UI/UX Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Crafting intuitive and visually appealing interfaces to enhance user experience. From wireframes to prototypes, I ensure seamless and engaging user journeys.</p>
               </div>
             </motion.div>
 
@@ -110,8 +109,10 @@ export default function Home() {
                   height={100}
                   className="inline"
                 />
-                <h2 className="text-2xl font-bold">Application Development</h2>
-                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+                <h2 className="text-2xl font-bold">Mobile Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Designing and building top-notch mobile applications for Android. I focus on creating user-friendly, fast, and reliable apps that stand out in the mobile market.
+
+</p>
               </div>
             </motion.div>
 
@@ -126,7 +127,7 @@ export default function Home() {
                   className="inline"
                 />
                 <h2 className="text-2xl font-bold">Web Development</h2>
-                <p className="text-sm py-2 text-gray-800 leading-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugiat cumque nobis ipsam esse ad?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+                <p className="text-sm py-2 text-gray-800 leading-6">Developing responsive websites using modern technologies. I create high-performance web applications that work flawlessly across all devices.</p>
               </div>
             </motion.div>
 
@@ -138,8 +139,7 @@ export default function Home() {
           <div>
             <h2 className="text-5xl py-10 font-bold opacity-60 dark:text-white">Portfolio</h2>
             <p className="text-sm py-2 text-gray-400 leading-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi rerum quibusdam aspernatur eveniet voluptatum minima, sequi porro excepturi? Ad reprehenderit repellat distinctio cupiditate eius voluptate!
-            </p>
+            Explore a showcase of my recent projects, highlighting my expertise in UI/UX design, web development, and mobile development. Each project reflects my commitment to creating visually appealing and highly functional digital solutions. From websites to engaging mobile applications, take a look at the innovative works I have done.</p>
           </div>
           {/* Images of projects */}
           <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap">
@@ -215,7 +215,7 @@ export default function Home() {
         <footer className="border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10 lg:flex-row lg:items-center dark:text-white dark:border-white">
           <div>
             <h3 className="text-base mb-2"> Contact me for more Details</h3>
-            <p className="opacity-40">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, tenetur dolor soluta quae veritatis ullam odio voluptatum. Amet, minus voluptas?</p>
+            <p className="opacity-40">Have a project in mind or just want to say hello? I'm always excited to connect and discuss new ideas. Drop me a message through any of the platforms below, and let's create something amazing together!</p>
             <p className="opacity-60 ">Copyright © 2022 Manuja</p>
           </div>
           <div className="cursor-pointer text-5xl flex justify-center gap-16 text-gray-600">
