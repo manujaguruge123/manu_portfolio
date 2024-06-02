@@ -94,8 +94,8 @@ export default function Home() {
                   height={100}
                   className="inline"
                 />
-                <h2 className="text-2xl font-bold">UI/UX Development</h2>
-                <p className="text-sm py-2 text-gray-800 leading-6">Crafting intuitive and visually appealing interfaces to enhance user experience. From wireframes to prototypes, I ensure seamless and engaging user journeys.</p>
+                <h2 className="text-2xl font-bold">Web Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Developing responsive websites using modern technologies. I create high-performance web applications that work flawlessly across all devices.</p>
               </div>
             </motion.div>
 
@@ -110,11 +110,10 @@ export default function Home() {
                   className="inline"
                 />
                 <h2 className="text-2xl font-bold">Mobile Development</h2>
-                <p className="text-sm py-2 text-gray-800 leading-6">Designing and building top-notch mobile applications for Android. I focus on creating user-friendly, fast, and reliable apps that stand out in the mobile market.
-
-</p>
+                <p className="text-sm py-2 text-gray-800 leading-6">Designing and building top-notch mobile applications for Android. I focus on creating user-friendly, fast, and reliable apps that stand out in the mobile market.</p>
               </div>
             </motion.div>
+            
 
             {/* Card 3 */}
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
@@ -126,8 +125,8 @@ export default function Home() {
                   height={100}
                   className="inline"
                 />
-                <h2 className="text-2xl font-bold">Web Development</h2>
-                <p className="text-sm py-2 text-gray-800 leading-6">Developing responsive websites using modern technologies. I create high-performance web applications that work flawlessly across all devices.</p>
+                <h2 className="text-2xl font-bold">UI/UX Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">Crafting intuitive and visually appealing interfaces to enhance user experience. From wireframes to prototypes, I ensure seamless and engaging user journeys.</p>
               </div>
             </motion.div>
 
